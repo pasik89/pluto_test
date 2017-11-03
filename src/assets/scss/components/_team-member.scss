@@ -1,0 +1,20 @@
+.team-member {
+  .member-description {
+    padding: 20px 0 10px;
+    border-bottom: 1px solid $primary-lightgray;
+    margin-bottom: 10px;
+  }
+
+  .social-icon-container {
+    a {
+      margin-right: 10px;
+      .fa {
+        color: $primary-darkgray;
+
+        &:hover {
+          color: $primary-black;
+        }
+      }
+    }
+  }
+}

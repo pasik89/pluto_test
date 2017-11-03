@@ -1,0 +1,21 @@
+.slider-section {
+
+
+    .title-section {
+      color: $white;
+    }
+    .swiper-pagination-bullet {
+      background: transparent;
+      border: 2px solid $white;
+    }
+
+    .swiper-pagination-bullet-active {
+      background: $white;
+    }
+
+    .slide-container {
+      padding: 150px 0;
+      background: $background-darkpurple;
+    }
+
+  }

@@ -1,0 +1,32 @@
+@charset "utf-8";
+@import "vendor/foundation/foundation";
+@import "vendor/foundation/components/accordion";
+@import "font-awesome";
+@include foundation-everything($flex: true);
+@import 'fonts';
+@import 'colors';
+@import 'swiper';
+@import 'font-awesome';
+@import 'typography';
+@import 'animations';
+/*   Import styles from folders */
+@import 'components/menu';
+@import 'components/service';
+@import 'components/pluto-accordion';
+@import 'components/team-member';
+@import 'components/footer';
+@import 'partials/head-section';
+@import 'partials/services';
+@import 'partials/capabilities';
+@import 'partials/slider';
+@import 'partials/team';
+@import 'partials/clients';
+@import 'partials/offer';
+@import 'partials/social';
+
+
+
+body {
+    overflow-x: hidden;
+    height: 100%;
+}

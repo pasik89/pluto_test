@@ -1,0 +1,38 @@
+.accordion {
+  border: 0;
+
+  a {
+    &:link,
+    &:visited,
+    &:active,
+    &:hover,
+    &:focus {
+        color: inherit;
+        background-color: inherit;
+    }
+  }
+
+  .accordion-item {
+
+    .accordion-title {
+      padding: 15px 20px;
+      &:hover,
+      &:focus {
+          background: inherit;
+      }
+
+      &:before {
+        color: $pluto-orange;
+        right: 0;
+        left: -5px;
+        top: 40%;
+        font-size: 25px;
+      }
+    }
+    &.is-active {
+      .accordion-title {
+        border: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+///////////////////////////////////////////////// Font Classes //////////////////////////////////////////////////
+
+
+.text-regular {
+    font-family: OpenSans Light;
+}
+
+
+//////////////////////////////////////////////////// Alignment Styles ///////////////////////////////////////////////////
+
+.text-right-mobile {
+    text-align: right;
+
+    @include breakpoint(medium) {
+      text-align: unset;
+    }
+}
+/////////////////////////////////////////////////// Buttons ////////////////////////////////////////////////////////
+
+
+
+///////////////////////////////////////////////// Main Colors ///////////////////////////////////////////////////
+
+.color-main-black {
+  color: $primary-black !important;
+}
+
+//////////////////////////////////////////////// Main Classes //////////////////////////////////////////////////
+
+
+.regular-paragraph {
+    font-size: 13px;
+    color: $primary-darkgray;
+    margin: 0;
+}
+
+.title-section {
+  margin: 0;
+  font-family: OpenSans Regular;
+  font-size: 27px;
+
+  @include breakpoint (medium) {
+    font-size: 32px;
+  }
+}
+
+.subtitle-section {
+    margin: 0;
+    font-family: OpenSans Semibold;
+    font-size: 13px;
+    color: $primary-lightgray;
+}
+
+.element-title {
+  font-size: 18px;
+  font-family: OpenSans Semibold;
+  color: $primary-black;
+}

@@ -1,0 +1,209 @@
+// Animated underline
+
+.link-decoration {
+    color: $primary-darkgray;
+    padding-bottom: 3px;
+    transition: box-shadow 0.1s;
+    box-sizing: border-box;
+    box-shadow: inset 0 -1px 0 0 $pluto-orange;
+
+    &:hover {
+      color: $primary-black;
+        box-shadow: inset 0 -4px 0 0 $pluto-orange;
+    }
+    &:visited {
+      color: $primary-darkgray;
+    }
+}
+
+
+// Fade Up on team section
+.animatable {
+    /* initially hide animatable objects */
+    visibility: hidden;
+    /* initially pause animatable objects their animations */
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -ms-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+}
+/* show objects being animated */
+.animated {
+    visibility: visible;
+    animation: fadeInUp;
+    animation-delay: 0.2s;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -ms-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -ms-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-play-state: running;
+    -moz-animation-play-state: running;
+    -ms-animation-play-state: running;
+    -o-animation-play-state: running;
+    animation-play-state: running;
+}
+.animated-2 {
+    visibility: visible;
+    animation: fadeInUp;
+    animation-delay: 0.2s;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -ms-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 0.5s;
+    -moz-animation-duration: 0.5s;
+    -ms-animation-duration: 0.5s;
+    -o-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-play-state: running;
+    -moz-animation-play-state: running;
+    -ms-animation-play-state: running;
+    -o-animation-play-state: running;
+    animation-play-state: running;
+}
+
+// Animated button
+/* Sweep To Top */
+.animation-btn-top {
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 3px;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+.animation-btn-top:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 3px;
+    background: $background-lightpurple;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.animation-btn-top:active,
+.animation-btn-top:focus,
+.animation-btn-top:hover {
+    color: $white;
+}
+
+.animation-btn-top:active:before,
+.animation-btn-top:focus:before,
+.animation-btn-top:hover:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+}
+
+@-webkit-keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+@-moz-keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -moz-transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        -moz-transform: translateY(0);
+    }
+}
+@-o-keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -o-transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        -o-transform: translateY(0);
+    }
+}
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+//Animation for search input
+
+@keyframes inputExpand {
+  0% {
+      width: 0;
+  }
+
+  100% {
+      width: 500px;
+  }
+}
+
+@keyframes inputExpandMobile {
+  0% {
+      width: 0;
+  }
+
+  100% {
+      width: 200px;
+  }
+}
+
+@keyframes inputClose {
+  0% {
+    width: 500px;
+  }
+
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes inputCloseMobile {
+  0% {
+    width: 200px;
+  }
+
+  100% {
+    width: 0;
+  }
+}

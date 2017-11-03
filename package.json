@@ -1,0 +1,49 @@
+{
+  "name": "Pluto",
+  "version": "1.0.0",
+  "description": "Pluto About site",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp",
+    "build": "node ./node_modules/gulp/bin/gulp.js build --production"
+  },
+  "dependencies": {
+    "mkdirp": "^0.5.1",
+    "gulp": "*",
+    "gulp-concat": "latest",
+    "gulp-connect": "latest",
+    "gulp-plumber": "latest",
+    "gulp-sass": "latest",
+    "gulp-sourcemaps": "latest",
+    "gulp-watch": "latest",
+    "merge-stream": "latest",
+    "gulp-group-css-media-queries": "latest",
+    "gulp-file-include": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-babel": "latest",
+    "gulp-jslint": "latest",
+    "gulp-zip": "latest",
+    "babel-preset-es2015": "latest",
+    "foundation-sites": "6.2.1",
+    "gulp-csscomb": "latest",
+    "jquery": "^2.1.1",
+    "gulp-jasmine": "latest",
+    "kss": "latest",
+    "gulp-kss": "latest",
+    "gulp-yuidoc": "latest"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "private": true,
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2"
+  }
+}

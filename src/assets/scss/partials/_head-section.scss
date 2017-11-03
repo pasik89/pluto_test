@@ -1,0 +1,36 @@
+.head-section {
+  .title-container {
+    background: $background-darkpurple;
+    padding: 20px 0;
+
+    .title-section {
+        color: $white;
+    }
+
+    p {
+      font-size: 13px;
+      color: $primary-lightgray;
+      margin: 0;
+
+      a {
+        color: $primary-lightgray;
+
+        &:hover {
+          color: $white;
+        }
+      }
+    }
+  }
+  .description-container {
+    padding: 50px 0 70px;
+    .regular-paragraph {
+      margin-bottom: 15px;
+    }
+
+    h4 {
+      font-size: 18px;
+      font-family: OpenSans Semibold;
+      color: $primary-darkgray;
+    }
+  }
+}

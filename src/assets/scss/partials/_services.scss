@@ -1,0 +1,22 @@
+.services-section {
+  padding: 50px 0 75px;
+  background-color: rgb(245,245,245);
+
+  .section-description {
+    font-size: 15px;
+    font-family: OpenSans Semibold;
+    color: $primary-darkgray;
+    @include breakpoint (medium) {
+      font-size: 18px;
+    }
+  }
+
+  .service-description {
+    position: relative;
+    margin: 20px 0;
+  }
+
+  .title-section {
+    margin: 20px 0;
+  }
+}

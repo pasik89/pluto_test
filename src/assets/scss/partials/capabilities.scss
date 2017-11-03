@@ -1,0 +1,23 @@
+.capabilities {
+  padding: 50px 0 75px;
+
+  .title-section {
+    margin: 20px 0;
+  }
+
+  .progress {
+    height: 2px;
+    background: #cccccc;
+    margin-bottom: 35px;
+
+    .progress-meter {
+      background: #453951;
+    }
+  }
+
+  .progress-bar-legend {
+    margin-bottom: 7px;
+    display: flex;
+    justify-content: space-between;
+  }
+}

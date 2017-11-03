@@ -1,0 +1,17 @@
+.offer-section {
+  padding: 50px 0;
+
+  .offer-paragraph {
+    font-size: 20px;
+    font-family: OpenSans Regular;
+    color: $primary-black;
+    margin: 0;
+  }
+
+  .offer-btn {
+    color: $primary-black;
+    padding: 10px 20px;
+    border: 1px solid $primary-darkgray;
+    border-radius: 5px;
+  }
+}

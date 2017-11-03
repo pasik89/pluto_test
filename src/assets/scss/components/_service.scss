@@ -1,0 +1,12 @@
+.icon {
+  // position: absolute;
+  display: inline-block;
+  margin-top: 30px;
+  background: $pluto-orange;
+  border-radius: 50%;
+
+  .fa {
+    margin: 9px;
+    color: $white;
+  }
+}
